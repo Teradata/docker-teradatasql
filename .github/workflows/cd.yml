@@ -32,6 +32,4 @@ jobs:
           build-args:
             - PYTHON_VERSION=${{ env.PYTHON_VERSION }}
             - TERADATASQL_VERSION=${{ env.TERADATASQL_VERSION }}
-          tags: 
-            - teradata/python-teradatasql:latest
-            - teradata/python-teradatasql:${{ env.PYTHON_VERSION }}-${{ env.TERADATASQL_VERSION }}
+          tags: teradata/python-teradatasql:latest, teradata/python-teradatasql:${{ env.PYTHON_VERSION }}-${{ env.TERADATASQL_VERSION }}
